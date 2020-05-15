@@ -1,8 +1,6 @@
 scriptencoding utf-8
 
 set encoding=utf-8
-" Allow edit multiple files
-set hidden
 " Show line numbers
 set number
 " Support mouse
