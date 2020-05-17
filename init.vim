@@ -51,14 +51,7 @@ let g:netrw_list_hide = "\.git/$," . netrw_gitignore#Hide()
 
 augroup ProjectDrawer
   autocmd!
-  autocmd VimEnter * :if isdirectory(".git")
-    autocmd VimEnter * :let current_file = @%
-    autocmd VimEnter * :Explore
-    autocmd VimEnter * :if filereadable(current_file)
-      autocmd VimEnter * :exec "tabnew ".current_file
-      autocmd VimEnter * :echo current_file
-    autocmd VimEnter * :endif
-  autocmd VimEnter * :endif
+  autocmd VimEnter * :source ~/.vim/project-explore.vim
 augroup END
 
 " Load languages configurations
