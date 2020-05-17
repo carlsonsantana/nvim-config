@@ -1,1 +1,7 @@
 .netrwhist
+
+backup/
+swap/
+
+!backup/.gitkeep
+!swap/.gitkeep
