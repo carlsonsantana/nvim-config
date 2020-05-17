@@ -21,7 +21,7 @@ set backspace=indent,eol,start
 
 " Show tabs and spaces
 
-set listchars=space:·,tab:>-
+set listchars=tab:>-
 set list
 
 " Search
