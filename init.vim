@@ -12,6 +12,7 @@ set laststatus=2
 
 " Show line numbers
 set number
+set ruler
 
 " Support mouse
 set mouse=a
