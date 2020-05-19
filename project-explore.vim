@@ -5,16 +5,16 @@ if isdirectory('.git')
   " Init shell with virtual enviroment for python projects or set
   " enviroment variables.
   if (isdirectory('env') && isdirectory('env/bin') && filereadable('env/bin/activate'))
-    botright terminal bash --init-file env/bin/activate
+    vertical rightbelow terminal ++close bash --init-file env/bin/activate
   elseif (isdirectory('venv') && isdirectory('venv/bin') && filereadable('venv/bin/activate'))
-    botright terminal bash --init-file venv/bin/activate
+    vertical rightbelow terminal ++close bash --init-file venv/bin/activate
   elseif filereadable('.env')
-    botright terminal bash --init-file .env
+    vertical rightbelow terminal ++close bash --init-file .env
   else
-    botright terminal
+    vertical rightbelow terminal ++close
   endif
 
-  wincmd k
+  wincmd h
   if filereadable(current_file)
     exec "tabnew " . current_file
     echo current_file
