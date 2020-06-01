@@ -4,4 +4,4 @@ set expandtab
 
 set colorcolumn=80
 
-source ~/.vim/programming-settings.vim
+source ~/.vim/programming/programming-settings.vim

@@ -59,13 +59,13 @@ augroup END
 filetype on
 augroup Languages_Settings
   autocmd BufNewFile,BufRead *.js set filetype=javascript
-  autocmd BufNewFile,BufRead *.ts set filetype=typescript
   autocmd BufNewFile,BufRead *.jsx set filetype=javascript
+  autocmd BufNewFile,BufRead *.ts set filetype=typescript
 
-  autocmd FileType javascript source ~/.vim/javascript-settings.vim
-  autocmd FileType typescript source ~/.vim/typescript-settings.vim
-  autocmd FileType python source ~/.vim/python-settings.vim
+  autocmd FileType javascript source ~/.vim/programming/javascript-settings.vim
+  autocmd FileType typescript source ~/.vim/programming/typescript-settings.vim
+  autocmd FileType python source ~/.vim/programming/python-settings.vim
 
-  autocmd FileType html source ~/.vim/html-settings.vim
-  autocmd FileType css source ~/.vim/css-settings.vim
+  autocmd FileType html source ~/.vim/programming/html-settings.vim
+  autocmd FileType css source ~/.vim/programming/css-settings.vim
 augroup END
