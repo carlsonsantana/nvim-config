@@ -21,13 +21,14 @@ set mouse=a
 set backspace=indent,eol,start
 
 " Show tabs and spaces
-
 set listchars=tab:>-
 set list
 
 " Search
 set hlsearch
 set incsearch
+set ignorecase
+set smartcase
 
 " Indent
 set autoindent
