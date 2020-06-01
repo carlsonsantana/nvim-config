@@ -4,4 +4,4 @@ set expandtab
 
 set colorcolumn=81
 
-source ~/.vim/whitespaceindent-settings.vim
+source ~/.vim/programming-settings.vim
