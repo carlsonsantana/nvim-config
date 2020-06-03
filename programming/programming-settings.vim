@@ -1,6 +1,6 @@
 highlight WhiteSpaceExtra term=underline cterm=underline ctermfg=DarkYellow
-match WhiteSpaceExtra /  \+/
+call matchadd('WhiteSpaceExtra', '  \+')
 highlight WhiteSpaceIndent term=strikethrough cterm=strikethrough ctermfg=DarkBlue
-2match WhiteSpaceIndent /^ \+/
+call matchadd('WhiteSpaceIndent', '^ \+')
 highlight WhiteSpaceExtra term=underline cterm=underline ctermfg=DarkYellow
-3match WhiteSpaceExtra / \+$/
+call matchadd('WhiteSpaceExtra', ' \+$')
