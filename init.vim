@@ -7,12 +7,11 @@ syntax on
 set encoding=utf-8
 
 " Always shows the vim mode
-set showmode
-set laststatus=2
+source ~/.vim/statusline.vim
 
-" Show line numbers
+" Line options
 set number
-set ruler
+set cursorline
 
 " Support mouse
 set mouse=a
