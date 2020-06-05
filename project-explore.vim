@@ -1,6 +1,26 @@
 if isdirectory('.git')
   let current_file = @%
-  Explore
+  let g:NERDTreeCustomOpenArgs = {'file':{'where':'t'}}
+  let g:NERDTreeShowHidden=1
+  let g:NERDTreeShowIgnoredStatus = 1
+  set guifont=RobotoMono\ Nerd\ Font\ Mono\ Light\ 12
+
+  let g:NERDTreeIndicatorMapCustom = {
+    \ 'Modified'  : '',
+    \ 'Staged'    : '',
+    \ 'Untracked' : '',
+    \ 'Renamed'   : '',
+    \ 'Unmerged'  : '',
+    \ 'Deleted'   : '',
+    \ 'Dirty'     : '',
+    \ 'Clean'     : '✔︎',
+    \ 'Ignored'   : '',
+    \ 'Unknown'   : '?'
+    \ }
+
+  NERDTree
+  wincmd w
+  quit
 
   " Init shell with virtual enviroment for python projects or set
   " enviroment variables.
@@ -14,9 +34,8 @@ if isdirectory('.git')
     vertical rightbelow terminal ++close ++kill=term
   endif
 
-  wincmd h
+  wincmd w
   if filereadable(current_file)
     exec "tabnew " . current_file
-    echo current_file
   endif
 endif

@@ -1,3 +1,12 @@
+call plug#begin('~/.vim/plugins')
+
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+call plug#end()
+
 scriptencoding utf-8
 
 " Enable sintax highlight
@@ -43,12 +52,8 @@ exec "set directory=" . swap_directory
 exec "set backupdir=" . backup_directory
 
 " Explorer
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 3
-let g:netrw_winsize = 25
-let g:netrw_altv = 1
-let g:netrw_list_hide = "\.git/$," . netrw_gitignore#Hide()
+let loaded_netrwPlugin = 1
+""let g:loaded_netrwPlugin = 1
 
 augroup ProjectDrawer
   autocmd!

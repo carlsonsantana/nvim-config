@@ -2,6 +2,8 @@
 
 backup/
 swap/
+plugins/
+autoload/
 
 !backup/.gitkeep
 !swap/.gitkeep
