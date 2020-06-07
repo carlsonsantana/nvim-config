@@ -2,7 +2,6 @@ if isdirectory('.git')
   let current_file = @%
   let g:NERDTreeCustomOpenArgs = {'file':{'where':'t'}}
   let g:NERDTreeShowHidden=1
-  let g:NERDTreeShowIgnoredStatus = 1
   set guifont=RobotoMono\ Nerd\ Font\ Mono\ Light\ 12
 
   let g:NERDTreeIndicatorMapCustom = {
