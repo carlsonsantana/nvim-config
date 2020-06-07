@@ -4,6 +4,8 @@ Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
@@ -12,6 +14,10 @@ scriptencoding utf-8
 " Enable sintax highlight
 filetype plugin on
 syntax on
+
+" Theme
+colorscheme dracula
+set termguicolors
 
 set encoding=utf-8
 
