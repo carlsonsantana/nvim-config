@@ -15,6 +15,17 @@ scriptencoding utf-8
 filetype plugin on
 syntax on
 
+" Keyboard speed
+nnoremap ; :
+" source: https://coderwall.com/p/cl6cpq/vim-ctrl-space-omni-keyword-completion
+inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
+            \ "\<lt>C-n>" :
+            \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+            \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+            \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+imap <C-@> <C-Space>
+inoremap <expr> <tab> pumvisible() ? "\<lt>CR>" : "\<lt>tab>"
+
 " Theme
 colorscheme dracula
 set termguicolors
@@ -47,6 +58,8 @@ set smartcase
 " Indent
 set autoindent
 set copyindent
+
+set showbreak=···\ 
 
 " Avoid write backup and swap files on working directory
 let current_directory = getcwd()
