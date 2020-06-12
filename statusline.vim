@@ -29,6 +29,7 @@ endfunction
 set statusline=\ %{ChangeStatusLineMode()}\ ⟩
 set statusline+=\ %f
 set statusline+=\ %m
+set statusline+=\ %{gutentags#statusline('[',']')}
 set statusline+=%=
 set statusline+=⟨\ %y\ 
 set statusline+=⟨\ %n\ 
