@@ -64,19 +64,5 @@ augroup ProjectDrawer
   autocmd VimEnter * :source ~/.vim/project-explore.vim
 augroup END
 
-" Load languages configurations
-filetype on
-augroup Languages_Settings
-  autocmd BufNewFile,BufRead *.js set filetype=javascript
-  autocmd BufNewFile,BufRead *.jsx set filetype=javascript
-  autocmd BufNewFile,BufRead *.ts set filetype=typescript
-
-  autocmd FileType javascript source ~/.vim/programming/javascript-settings.vim
-  autocmd FileType typescript source ~/.vim/programming/typescript-settings.vim
-  autocmd FileType python source ~/.vim/programming/python-settings.vim
-
-  autocmd FileType html source ~/.vim/programming/html-settings.vim
-  autocmd FileType css source ~/.vim/programming/css-settings.vim
-augroup END
-
+source ~/.vim/languages.vim
 source ~/.vim/autocomplete.vim
