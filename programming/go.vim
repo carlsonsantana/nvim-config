@@ -8,4 +8,4 @@ set nolist
 
 let b:ale_fixers = ['gofmt']
 
-source ~/.vim/programming/programming-settings.vim
+source ~/.vim/programming/tab-indent.vim
