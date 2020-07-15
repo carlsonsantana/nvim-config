@@ -15,3 +15,6 @@ augroup Languages_Settings
 augroup END
 
 let g:ale_fix_on_save = 1
+
+" HTML, XML, JSX
+let g:closetag_filetypes = 'html,xhtml,jsx,javascript'

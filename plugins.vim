@@ -1,18 +1,26 @@
 call plug#begin('~/.vim/plugins')
 
+" Nerdtree
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'sheerun/vim-polyglot'
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'airblade/vim-gitgutter'
-Plug 'dense-analysis/ale'
 
-" HTML, XML, JSX
+
+" Theme
+Plug 'dracula/vim', { 'as': 'dracula' }
+
+
+" Editor
+Plug 'sheerun/vim-polyglot'
+Plug 'dense-analysis/ale'
+Plug 'airblade/vim-gitgutter'
+
+" Languages
 Plug 'carlsonsantana/vim-match-tag'
 Plug 'alvan/vim-closetag'
-let g:closetag_filetypes = 'html,xhtml,jsx,javascript'
+
+" Autocomplete
+Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
