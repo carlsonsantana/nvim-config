@@ -12,5 +12,7 @@ Plug 'dense-analysis/ale'
 
 " HTML, XML, JSX
 Plug 'carlsonsantana/vim-match-tag'
+Plug 'alvan/vim-closetag'
+let g:closetag_filetypes = 'html,xhtml,jsx,javascript'
 
 call plug#end()
