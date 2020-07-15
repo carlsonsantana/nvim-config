@@ -13,3 +13,5 @@ augroup Languages_Settings
   autocmd FileType css source ~/.vim/programming/css.vim
   autocmd FileType go source ~/.vim/programming/go.vim
 augroup END
+
+let g:ale_fix_on_save = 1

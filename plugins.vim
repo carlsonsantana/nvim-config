@@ -8,5 +8,6 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'sheerun/vim-polyglot'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'airblade/vim-gitgutter'
+Plug 'dense-analysis/ale'
 
 call plug#end()
