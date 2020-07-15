@@ -10,4 +10,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
 
+" HTML, XML, JSX
+Plug 'carlsonsantana/vim-match-tag'
+
 call plug#end()
