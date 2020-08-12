@@ -66,3 +66,4 @@ augroup END
 
 source ~/.vim/languages.vim
 source ~/.vim/autocomplete.vim
+source ~/.vim/templates.vim
