@@ -15,6 +15,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
 Plug 'airblade/vim-gitgutter'
+Plug 'scy/vim-mkdir-on-write'
 
 " Languages
 Plug 'carlsonsantana/vim-match-tag'
