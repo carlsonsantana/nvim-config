@@ -24,19 +24,19 @@ if isdirectory('.git')
   " Init shell with virtual enviroment for python projects or set
   " enviroment variables.
   if (isdirectory('env') && isdirectory('env/bin') && filereadable('env/bin/activate'))
-    terminal ++close ++kill=term bash --init-file env/bin/activate
+    rightbelow terminal ++close ++kill=term bash --init-file env/bin/activate
     wincmd w
     vertical rightbelow terminal ++close ++kill=term bash --init-file env/bin/activate
   elseif (isdirectory('venv') && isdirectory('venv/bin') && filereadable('venv/bin/activate'))
-    terminal ++close ++kill=term bash --init-file venv/bin/activate
+    rightbelow terminal ++close ++kill=term bash --init-file venv/bin/activate
     wincmd w
     vertical rightbelow terminal ++close ++kill=term bash --init-file venv/bin/activate
   elseif filereadable('.env')
-    terminal ++close ++kill=term bash --init-file .env
+    rightbelow terminal ++close ++kill=term bash --init-file .env
     wincmd w
     vertical rightbelow terminal ++close ++kill=term bash --init-file .env
   else
-    rightb terminal ++close ++kill=term
+    rightbelow terminal ++close ++kill=term
     wincmd w
     vertical rightbelow terminal ++close ++kill=term
   endif
