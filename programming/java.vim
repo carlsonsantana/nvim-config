@@ -5,3 +5,5 @@ set expandtab
 set colorcolumn=81
 
 source ~/.vim/programming/whitespace-indent.vim
+
+setlocal omnifunc=javacomplete#Complete

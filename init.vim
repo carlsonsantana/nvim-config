@@ -64,6 +64,6 @@ augroup ProjectDrawer
   autocmd VimEnter * :source ~/.vim/project-explore.vim
 augroup END
 
-source ~/.vim/languages.vim
 source ~/.vim/autocomplete.vim
+source ~/.vim/languages.vim
 source ~/.vim/templates.vim

@@ -23,5 +23,6 @@ Plug 'alvan/vim-closetag'
 
 " Autocomplete
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'artur-shaik/vim-javacomplete2'
 
 call plug#end()
