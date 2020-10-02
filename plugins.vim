@@ -23,6 +23,12 @@ Plug 'alvan/vim-closetag'
 
 " Autocomplete
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'artur-shaik/vim-javacomplete2'
+Plug 'yuratomo/java-api-complete'
+Plug 'yuratomo/java-api-javax'
+Plug 'yuratomo/java-api-org'
+Plug 'yuratomo/java-api-sun'
+Plug 'yuratomo/java-api-servlet2.3'
+Plug 'yuratomo/java-api-android'
+Plug 'yuratomo/java-api-junit'
 
 call plug#end()

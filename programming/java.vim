@@ -6,4 +6,4 @@ set colorcolumn=81
 
 source ~/.vim/programming/whitespace-indent.vim
 
-setlocal omnifunc=javacomplete#Complete
+setl omnifunc=javaapi#complete
