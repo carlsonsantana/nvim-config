@@ -27,24 +27,17 @@ set cursorline
 " Support mouse
 set mouse=a
 
-" Allow delete all with backspace
-set backspace=indent,eol,start
-
 " Show tabs and spaces
 set listchars=tab:>-
 set list
+
+set showbreak=···\ 
 
 " Search
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-
-" Indent
-set autoindent
-set copyindent
-
-set showbreak=···\ 
 
 " Avoid write backup and swap files on working directory
 let current_directory = getcwd()
@@ -67,3 +60,4 @@ augroup END
 source ~/.vim/autocomplete.vim
 source ~/.vim/languages.vim
 source ~/.vim/templates.vim
+source ~/.vim/editor.vim
