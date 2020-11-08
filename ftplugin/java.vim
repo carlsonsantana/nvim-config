@@ -15,3 +15,15 @@ if filereadable('pom.xml')
     setl makeprg=mvn\ package
   endif
 endif
+
+" Highlight all unused imports
+highlight link unusedimport WarningMsg
+
+augroup JavaUnusedImports
+  autocmd!
+
+  " Highlight all unused imports
+  autocmd BufEnter *.java :UnusedImports
+  " Remove unused imports
+  autocmd BufWritePre,FileWritePre *.java :UnusedImportsRemove
+augroup END

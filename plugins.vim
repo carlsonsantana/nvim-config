@@ -27,4 +27,7 @@ Plug 'yuratomo/java-api-complete'
 Plug 'yuratomo/java-api-javax'
 Plug 'yuratomo/java-api-junit'
 
+" Remove unused imports
+Plug 'akhaku/vim-java-unused-imports'
+
 call plug#end()
