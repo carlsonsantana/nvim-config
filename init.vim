@@ -27,6 +27,10 @@ set cursorline
 " Support mouse
 set mouse=a
 
+" Support suggestion for VIM commands
+set wildmenu
+set wildmode=list:longest,full
+
 " Show tabs and spaces
 set listchars=tab:>-
 set list
