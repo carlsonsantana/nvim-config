@@ -4,7 +4,7 @@ augroup END
 
 function s:LoadTemplateIfExists()
   if s:HasFileSkeleton()
-    exec s:LoadSkeletonSpecialFile()   
+    exec s:LoadSkeletonSpecialFile()
   elseif s:HasLanguageSkeleton()
     exec s:LoadSkeleton()
   else
@@ -34,7 +34,7 @@ function s:DeleteLastLine()
   :$d
 endfunction
 
-function s:HasLanguageSkeleton() 
+function s:HasLanguageSkeleton()
   return filereadable(expand(s:GetLanguageSkeletonFileName()))
 endfunction
 
@@ -99,5 +99,5 @@ function s:MountPackageName(currentDirectory)
   if package != "src"
     let completePackageName = s:MountPackageName(fnamemodify(a:currentDirectory, ':p:h:h')) . '.' . package
   endif
-  return substitute(completePackageName, '^\.main\.java\.', '\1', '')
+  return substitute(substitute(completePackageName, '^\.main\.java\.', '\1', ''), '^\.test\.java\.', '\1', '')
 endfunction
