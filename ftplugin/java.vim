@@ -6,7 +6,7 @@ set colorcolumn=81
 
 source ~/.vim/programming/whitespace-indent.vim
 
-setl omnifunc=javaapi#complete
+setlocal omnifunc=javacomplete#Complete
 
 if filereadable('pom.xml')
   if filereadable('.env')

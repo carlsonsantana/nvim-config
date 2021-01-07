@@ -23,9 +23,7 @@ Plug 'alvan/vim-closetag'
 
 " Autocomplete
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'yuratomo/java-api-complete'
-Plug 'yuratomo/java-api-javax'
-Plug 'yuratomo/java-api-junit'
+Plug 'artur-shaik/vim-javacomplete2'
 
 " Remove unused imports
 Plug 'akhaku/vim-java-unused-imports'
