@@ -1,0 +1,4 @@
+[pycodestyle]
+max_line_length = 79
+
+ignore=E11,E20,E22,E26,E27,E70,E124,E127,E128,E131,E133,E306,E401,E402,E722,W292,W293,W391,W503
