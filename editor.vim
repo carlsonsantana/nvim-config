@@ -5,6 +5,9 @@ set copyindent
 " Allow delete all with backspace
 set backspace=indent,eol,start
 
+" Linters
+let g:ale_python_pylint_options = '--rcfile ~/.vim/programming/configs/python/.pylintrc'
+
 " Fix code
 let g:ale_fixers = {
 \   '*': ['trim_whitespace', 'remove_trailing_lines'],
