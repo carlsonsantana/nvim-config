@@ -7,6 +7,7 @@ set backspace=indent,eol,start
 
 " Linters
 let g:ale_python_pylint_options = '--rcfile ~/.vim/programming/configs/python/.pylintrc'
+let g:ale_python_mypy_options = '--config-file ~/.config/mypy.ini'
 
 " Fix code
 let g:ale_fixers = {
