@@ -43,6 +43,9 @@ set incsearch
 set ignorecase
 set smartcase
 
+" Visual improvement
+set scrolloff=5
+
 " Avoid write backup and swap files on working directory
 let current_directory = getcwd()
 let swap_directory = "~/.vim/swap" . current_directory
