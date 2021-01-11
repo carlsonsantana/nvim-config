@@ -2,6 +2,10 @@
 set autoindent
 set copyindent
 
+" Maintains selection after indenting
+vnoremap > >gv
+vnoremap < <gv
+
 " Allow delete all with backspace
 set backspace=indent,eol,start
 
