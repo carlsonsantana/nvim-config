@@ -1,0 +1,74 @@
+snippet import
+	require_once '${0:folder/php}';
+
+snippet if
+	if (${1:condition}) {
+		${0:${VISUAL}}
+	}
+snippet elif
+	else if (${1:condition}) {
+		${0:${VISUAL}}
+	}
+snippet else
+	else {
+		${0:${VISUAL}}
+	}
+
+snippet for
+	for ($${1:index} = 0; $${1} < ${2:less_than}; $${1}++) {
+		${0:${VISUAL}}
+	}
+snippet foreach
+	for ($${2:items} as $${1:item}) {
+		${0:${VISUAL}}
+	}
+snippet while
+	while (${1:condition}) {
+		${0:${VISUAL}}
+	}
+snippet do
+	do {
+		${0:${VISUAL}}
+	while (${1:condition});
+
+snippet class
+	class ${1:ClassName} {
+		${0:${VISUAL}}
+	}
+snippet function
+	function ${1:functionName}(${2:string} $${3:argument}): ${4:return_type} {
+		${0:${VISUAL}}
+	}
+snippet method
+	${1:public} function ${2:methodName}(${3:type} $${4:argument}): ${5:return_type} {
+		${0:${VISUAL}}
+	}
+snippet get
+	public function get${1:Property}(): ${2:return_type} {
+		return ${0};
+	}
+snippet set
+	public function set${1:Property}(${2:string} $new${1:Property}): void {
+		${0:${VISUAL}}
+	}
+snippet staticmethod
+	${1:public} static function ${2:method}(${3:type} $${4:argument}): ${5:return_type} {
+		${0:${VISUAL}}
+	}
+
+snippet ufunction
+	function ${1:functionName}($${2:argument}) {
+		${0:${VISUAL}}
+	}
+snippet umethod
+	${1:public} function ${2:methodName}($${3:argument}) {
+		${0:${VISUAL}}
+	}
+snippet uget
+	public function get${1:Property}() {
+		return ${0};
+	}
+snippet uset
+	public function set${1:Property}($new${1:Property}) {
+		${0:${VISUAL}}
+	}

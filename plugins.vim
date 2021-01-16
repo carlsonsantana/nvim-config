@@ -17,6 +17,11 @@ Plug 'dense-analysis/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'scy/vim-mkdir-on-write'
 
+" Snippets
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+
 " Languages
 Plug 'carlsonsantana/vim-match-tag'
 Plug 'alvan/vim-closetag'

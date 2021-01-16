@@ -1,0 +1,74 @@
+snippet import
+	from ${1:package} import ${0:module}
+
+snippet if
+	if ${1:condition}:
+		${0:${VISUAL}}
+snippet elif
+	elif ${1:condition}:
+		${0:${VISUAL}}
+snippet else
+	else:
+		${0:${VISUAL}}
+
+snippet for
+	for ${1:index} in range(0, ${2:less_than}):
+		${0:${VISUAL}}
+snippet foreach
+	for ${1:item} in ${2:items}:
+		${0:${VISUAL}}
+snippet while
+	while ${1:condition}:
+		${0:${VISUAL}}
+snippet do
+	while True:
+		${0:${VISUAL}}
+		if ${1:condition}:
+			break
+
+snippet class
+	class ${1:ClassName}:
+		${0:${VISUAL}}
+snippet function
+	def ${1:function_name}(${2:args}) -> ${3:return_type}:
+		${0:${VISUAL}}
+snippet method
+	def ${1:method_name}(self, ${2:args}) -> ${3:return_type}:
+		${0:${VISUAL}}
+snippet get
+	@property
+	def ${1:property_name}(self) -> ${2:return_type}:
+		return ${0}
+snippet set
+	@${1:property_name}.setter
+	def ${1:property_name}(self, new_${1:property_name}) -> None:
+		${0:${VISUAL}}
+snippet staticmethod
+	@staticmethod
+	def ${1:method}(${2:args}) -> ${3:return_type}:
+		${0:${VISUAL}}
+
+snippet ufunction
+	def ${1:function_name}(${2:args}):
+		${0:${VISUAL}}
+snippet umethod
+	def ${1:method_name}(self, ${2:args}):
+		${0:${VISUAL}}
+snippet uget
+	@property
+	def ${1:property_name}(self):
+		return ${0}
+snippet uset
+	@${1:property_name}.setter
+	def ${1:property_name}(self, new_${1:property_name}):
+		${0:${VISUAL}}
+
+snippet model
+	class ${1:ModelClassName}(models.Model):
+		${0:${VISUAL}}
+snippet dbint
+	${0:field} = models.IntegerField()
+snippet dbstr
+	${0:field} = models.CharField()
+snippet dbrel
+	${1:field} = models.ForeignKey(${2:ModelClass}, on_delete=models.PROTECT)

@@ -68,3 +68,4 @@ source ~/.vim/autocomplete.vim
 source ~/.vim/languages.vim
 source ~/.vim/templates.vim
 source ~/.vim/editor.vim
+source ~/.vim/snippets.vim

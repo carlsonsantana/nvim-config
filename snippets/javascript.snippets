@@ -1,0 +1,45 @@
+snippet import
+	import ${0:imported} from '${1:module}';
+
+snippet if
+	if (${1:condition}) {
+		${0:${VISUAL}}
+	}
+snippet elif
+	else if (${1:condition}) {
+		${0:${VISUAL}}
+	}
+snippet else
+	else {
+		${0:${VISUAL}}
+	}
+
+snippet for
+	for (let ${1:index} = 0; ${1} < ${2:less_than}; ${1}++) {
+		${0:${VISUAL}}
+	}
+snippet foreach
+	${2:items}.forEach((${1:item}) => {
+		${0:${VISUAL}}
+	});
+snippet while
+	while (${1:condition}) {
+		${0:${VISUAL}}
+	}
+snippet do
+	do {
+		${0:${VISUAL}}
+	while (${1:condition});
+
+snippet class
+	class ${1:ClassName} {
+		${0:${VISUAL}}
+	}
+snippet function
+	function ${1:functionName}(${2:argument}) {
+		${0:${VISUAL}}
+	}
+snippet method
+	${1:methodName}(${2:argument}) {
+		${0:${VISUAL}}
+	}
