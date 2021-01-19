@@ -11,6 +11,11 @@ syntax on
 " Keyboard speed
 nnoremap ; :
 
+set whichwrap+=<,>,h,l
+
+map j gj
+map k gk
+
 " Theme
 colorscheme dracula
 set termguicolors
@@ -54,6 +59,8 @@ silent exec "! mkdir -p " . swap_directory
 silent exec "! mkdir -p " . backup_directory
 exec "set directory=" . swap_directory
 exec "set backupdir=" . backup_directory
+
+set nolazyredraw
 
 " Explorer
 let loaded_netrwPlugin = 1
