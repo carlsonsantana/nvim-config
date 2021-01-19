@@ -9,6 +9,9 @@ vnoremap < <gv
 " Allow delete all with backspace
 set backspace=indent,eol,start
 
+" Copy to clipboard
+vmap y ygvcp
+
 " Linters
 let g:ale_python_pylint_options = '--rcfile ~/.vim/programming/configs/python/.pylintrc'
 let g:ale_python_mypy_options = '--config-file ~/.config/mypy.ini'

@@ -16,6 +16,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'scy/vim-mkdir-on-write'
+Plug 'christoomey/vim-system-copy'
 
 " Snippets
 Plug 'MarcWeber/vim-addon-mw-utils'
