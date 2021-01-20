@@ -1,7 +1,9 @@
-set tabstop=2
-set shiftwidth=2
-set expandtab
+if &ft=='html'
+  set tabstop=2
+  set shiftwidth=2
+  set expandtab
 
-set colorcolumn=81
+  set colorcolumn=81
 
-source ~/.vim/programming/whitespace-indent.vim
+  source ~/.vim/programming/whitespace-indent.vim
+endif
