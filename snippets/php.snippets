@@ -32,7 +32,7 @@ snippet do
 	while (${1:condition});
 
 snippet class
-	class ${1:ClassName} {
+	class `Filename()` {
 		${0:${VISUAL}}
 	}
 snippet function
@@ -40,19 +40,23 @@ snippet function
 		${0:${VISUAL}}
 	}
 snippet method
-	${1:public} function ${2:methodName}(${3:type} $${4:argument}): ${5:return_type} {
+	${1:public} function ${2:methodName}(${3:string} $${4:argument}): ${5:return_type} {
 		${0:${VISUAL}}
 	}
 snippet get
 	public function get${1:Property}(): ${2:return_type} {
 		return ${0};
 	}
+snippet constructor
+	public function __construct(${1:string} ${2:argument}) {
+		${0:${VISUAL}}
+	}
 snippet set
 	public function set${1:Property}(${2:string} $new${1:Property}): void {
 		${0:${VISUAL}}
 	}
 snippet staticmethod
-	${1:public} static function ${2:method}(${3:type} $${4:argument}): ${5:return_type} {
+	${1:public} static function ${2:method}(${3:string} $${4:argument}): ${5:return_type} {
 		${0:${VISUAL}}
 	}
 
@@ -70,5 +74,9 @@ snippet uget
 	}
 snippet uset
 	public function set${1:Property}($new${1:Property}) {
+		${0:${VISUAL}}
+	}
+snippet uconstructor
+	public function __construct(${1:argument}) {
 		${0:${VISUAL}}
 	}

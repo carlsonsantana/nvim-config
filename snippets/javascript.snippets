@@ -32,7 +32,7 @@ snippet do
 	while (${1:condition});
 
 snippet class
-	class ${1:ClassName} {
+	class ${1:`Filename()`} {
 		${0:${VISUAL}}
 	}
 snippet function
@@ -41,5 +41,9 @@ snippet function
 	}
 snippet method
 	${1:methodName}(${2:argument}) {
+		${0:${VISUAL}}
+	}
+snippet constructor
+	constructor(${2:argument}) {
 		${0:${VISUAL}}
 	}

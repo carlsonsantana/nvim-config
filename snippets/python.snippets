@@ -30,10 +30,10 @@ snippet class
 	class ${1:ClassName}:
 		${0:${VISUAL}}
 snippet function
-	def ${1:function_name}(${2:args}) -> ${3:return_type}:
+	def ${1:function_name}(${2:argument}: ${3:str}) -> ${4:return_type}:
 		${0:${VISUAL}}
 snippet method
-	def ${1:method_name}(self, ${2:args}) -> ${3:return_type}:
+	def ${1:method_name}(self, ${2:argument}: ${3:str}) -> ${4:return_type}:
 		${0:${VISUAL}}
 snippet get
 	@property
@@ -41,11 +41,14 @@ snippet get
 		return ${0}
 snippet set
 	@${1:property_name}.setter
-	def ${1:property_name}(self, new_${1:property_name}) -> None:
+	def ${1:property_name}(self, new_${1:property_name}: ${2:str}) -> None:
+		${0:${VISUAL}}
+snippet constructor
+	def __init__(self, ${1:argument}: ${2:str}):
 		${0:${VISUAL}}
 snippet staticmethod
 	@staticmethod
-	def ${1:method}(${2:args}) -> ${3:return_type}:
+	def ${1:method}(${2:argument}: ${3:str}) -> ${4:return_type}:
 		${0:${VISUAL}}
 
 snippet ufunction
@@ -61,6 +64,9 @@ snippet uget
 snippet uset
 	@${1:property_name}.setter
 	def ${1:property_name}(self, new_${1:property_name}):
+		${0:${VISUAL}}
+snippet uconstructor
+	def __init__(self, ${1:argument}):
 		${0:${VISUAL}}
 
 snippet model

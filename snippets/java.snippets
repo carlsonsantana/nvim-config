@@ -42,7 +42,7 @@ snippet class
 		${0:${VISUAL}}
 	}
 snippet method
-	${1:public} ${2:void} ${3:methodName}(${4:args}) {
+	${1:public} ${2:void} ${3:methodName}(final ${4:String} ${5:arguments}) {
 		${0:${VISUAL}}
 	}
 snippet get
@@ -53,7 +53,11 @@ snippet set
 	public void set${1:Property}(final ${2:String} new${1:Property}) {
 		${0:${VISUAL}}
 	}
+snippet constructor
+	public `Filename()`(final ${4:String} ${5:arguments}) {
+		${0:${VISUAL}}
+	}
 snippet staticmethod
-	${1:public} static ${2:void} ${3:methodName}(${4:args}) {
+	${1:public} static ${2:void} ${3:methodName}(final ${4:String} ${5:arguments}) {
 		${0:${VISUAL}}
 	}
