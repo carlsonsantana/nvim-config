@@ -76,3 +76,7 @@ source ~/.vim/languages.vim
 source ~/.vim/templates.vim
 source ~/.vim/editor.vim
 source ~/.vim/snippets.vim
+
+if filereadable('.git/project_settings.vim')
+	source .git/project_settings.vim
+endif
