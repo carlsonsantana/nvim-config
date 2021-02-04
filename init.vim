@@ -77,6 +77,18 @@ source ~/.vim/templates.vim
 source ~/.vim/editor.vim
 source ~/.vim/snippets.vim
 
+let g:CCSpellCheckEnable = 1
+
+" Setting for start checking min length of character. (default 4)
+let g:CCSpellCheckMinCharacterLength = 4
+
+" Setting for max suggest words list length. (default 50)
+let g:CCSpellCheckMaxSuggestWords = 50
+
+
+" Override highlight group name. (default 'CCSpellBad')
+let g:CCSpellCheckMatchGroupName = 'CCSpellBad'
+
 if filereadable('.git/project_settings.vim')
 	source .git/project_settings.vim
 endif

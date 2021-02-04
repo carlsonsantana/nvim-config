@@ -13,6 +13,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Editor
 Plug 'sheerun/vim-polyglot'
+Plug 'kamykn/CCSpellCheck.vim'
 Plug 'dense-analysis/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'scy/vim-mkdir-on-write'
