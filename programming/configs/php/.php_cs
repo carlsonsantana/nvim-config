@@ -89,4 +89,7 @@ return $config->setRules([
         'align' => 'left',
     ],
     'phpdoc_annotation_without_dot' => false,
+    'no_unneeded_control_parentheses' => [
+        'statements' => ['break'],
+    ],
 ]);
