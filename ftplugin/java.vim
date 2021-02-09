@@ -12,7 +12,7 @@ if filereadable('pom.xml')
   if filereadable('.env')
     setl makeprg=source\ .env\ &&\ mvn\ package
   else
-    setl makeprg=mvn\ package
+    setl makeprg=mvn\ clean\ package
   endif
 endif
 
