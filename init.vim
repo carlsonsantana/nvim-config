@@ -27,6 +27,7 @@ source ~/.vim/statusline.vim
 
 " Line options
 set number
+set relativenumber
 set cursorline
 
 " Support mouse
@@ -40,7 +41,7 @@ set wildmode=list:longest,full
 set listchars=tab:>-
 set list
 
-set showbreak=···\ 
+set showbreak=···\
 
 " Search
 set hlsearch
