@@ -41,7 +41,7 @@ set wildmode=list:longest,full
 set listchars=tab:>-
 set list
 
-set showbreak=···\
+set showbreak=···
 
 " Search
 set hlsearch
