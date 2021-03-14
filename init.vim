@@ -77,6 +77,7 @@ source ~/.vim/languages.vim
 source ~/.vim/templates.vim
 source ~/.vim/editor.vim
 source ~/.vim/snippets.vim
+source ~/.vim/keymaps.vim
 
 let g:CCSpellCheckEnable = 1
 
