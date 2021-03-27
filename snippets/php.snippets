@@ -327,17 +327,21 @@ snippet get
 	public function get${1:Property}(): ${2:return_type} {
 		return ${0};
 	}
-snippet constructor
-	public function __construct(${1:string} ${2:argument}) {
-		${0:${VISUAL}}
-	}
 snippet set
 	public function set${1:Property}(${2:string} $new${1:Property}): void {
+		${0:${VISUAL}}
+	}
+snippet constructor
+	public function __construct(${1:string} ${2:argument}) {
 		${0:${VISUAL}}
 	}
 snippet staticmethod
 	${1:public} static function ${2:method}(${3:string} $${4:argument}): ${5:return_type} {
 		${0:${VISUAL}}
+	}
+snippet tostr
+	public function __toString(): string {
+		return ${0};
 	}
 
 snippet ufunction
@@ -359,4 +363,12 @@ snippet uset
 snippet uconstructor
 	public function __construct(${1:argument}) {
 		${0:${VISUAL}}
+	}
+snippet ustaticmethod
+	${1:public} static function ${2:method}(${3:string}) {
+		${0:${VISUAL}}
+	}
+snippet utostr
+	public function __toString() {
+		return ${0};
 	}

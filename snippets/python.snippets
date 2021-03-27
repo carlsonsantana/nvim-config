@@ -50,6 +50,9 @@ snippet staticmethod
 	@staticmethod
 	def ${1:method}(${2:argument}: ${3:str}) -> ${4:return_type}:
 		${0:${VISUAL}}
+snippet tostr
+	def __str__(self) -> str:
+		return ${0}
 
 snippet ufunction
 	def ${1:function_name}(${2:args}):
@@ -68,6 +71,13 @@ snippet uset
 snippet uconstructor
 	def __init__(self, ${1:argument}):
 		${0:${VISUAL}}
+snippet ustaticmethod
+	@staticmethod
+	def ${1:method}(${2:argument}):
+		${0:${VISUAL}}
+snippet utostr
+	def __str__(self):
+		return ${0}
 
 snippet model
 	class ${1:ModelClassName}(models.Model):
