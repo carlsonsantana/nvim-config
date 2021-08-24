@@ -30,9 +30,6 @@ set number
 set relativenumber
 set cursorline
 
-" Support mouse
-set mouse=a
-
 " Support suggestion for VIM commands
 set wildmenu
 set wildmode=list:longest,full
