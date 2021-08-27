@@ -28,7 +28,6 @@ source ~/.vim/statusline.vim
 " Line options
 set number
 set relativenumber
-set cursorline
 
 " Support suggestion for VIM commands
 set wildmenu
@@ -58,8 +57,6 @@ silent exec "! mkdir -p " . backup_directory
 exec "set directory=" . swap_directory
 exec "set backupdir=" . backup_directory
 
-set nolazyredraw
-
 " Explorer
 let loaded_netrwPlugin = 1
 ""let g:loaded_netrwPlugin = 1
@@ -75,6 +72,7 @@ source ~/.vim/templates.vim
 source ~/.vim/editor.vim
 source ~/.vim/snippets.vim
 source ~/.vim/keymaps.vim
+source ~/.vim/performance.vim
 
 let g:CCSpellCheckEnable = 1
 
