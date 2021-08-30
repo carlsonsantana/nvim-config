@@ -31,12 +31,26 @@ let g:ale_php_cs_fixer_options = '--config=$(readlink -f ~/.vim/programming/conf
 let g:ale_c_uncrustify_options = '-c ~/.vim/programming/configs/java/config.cfg -l JAVA'
 
 " CTRLSF
-
 let g:ctrlsf_ignore_dir = ['target']
 let g:ctrlsf_auto_preview = 1
 let g:ctrlsf_auto_focus = {'at': 'done'}
 
 " fzf
-
 let g:fzf_buffers_jump = 1
 let g:fzf_action = {'enter': 'tab split'}
+
+" Alternative files
+let g:projectionist_heuristics = {
+\ '*': {
+\   'src/main/java/*.java': {'alternate': 'src/test/java/{}Test.java'},
+\   'src/test/java/*Test.java': {'alternate': 'src/main/java/{}.java'},
+\   '*.py': {'alternate': 'tests/{}.py'},
+\   'index.jsx': {'alternate': 'style.css'},
+\   '*.jsx': {'alternate': '{}.css'},
+\   '*.component.ts': {'alternate': ['{}.component.html', '{}.component.css', '{}.component.scss', '{}.component.spec.ts']},
+\   '*.component.html': {'alternate': ['{}.component.css', '{}.component.scss', '{}.component.spec.ts', '{}.component.ts']},
+\   '*.component.css': {'alternate': ['{}.component.spec.ts', '{}.component.ts', '{}.component.html']},
+\   '*.component.scss': {'alternate': ['{}.component.spec.ts', '{}.component.ts', '{}.component.html']},
+\   '*.component.spec.ts': {'alternate': ['{}.component.ts', '{}.component.html', '{}.component.css', '{}.component.scss']}
+\ }
+\}
