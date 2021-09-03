@@ -21,6 +21,7 @@ Plug 'christoomey/vim-system-copy'
 Plug 'junegunn/fzf.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'tpope/vim-projectionist'
+Plug 'mattn/emmet-vim'
 
 " Snippets
 Plug 'MarcWeber/vim-addon-mw-utils'
