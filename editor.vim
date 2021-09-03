@@ -30,6 +30,10 @@ let g:ale_python_autopep8_options = '--global-config ~/.vim/programming/configs/
 let g:ale_php_cs_fixer_options = '--config=$(readlink -f ~/.vim/programming/configs/php/.php_cs) --allow-risky=yes --cache-file=.git/.php_cs.cache'
 let g:ale_c_uncrustify_options = '-c ~/.vim/programming/configs/java/config.cfg -l JAVA'
 
+" Navigate between errors
+nmap <silent> <Leader>N <Plug>(ale_previous_wrap)
+nmap <silent> <Leader>n <Plug>(ale_next_wrap)
+
 " CTRLSF
 let g:ctrlsf_ignore_dir = ['target']
 let g:ctrlsf_auto_preview = 1

@@ -10,6 +10,9 @@ syntax on
 
 " Keyboard speed
 nnoremap ; :
+nnoremap <Space> <Nop>
+map <Space> <Leader>
+let mapleader=' '
 
 set whichwrap+=<,>,h,l
 
