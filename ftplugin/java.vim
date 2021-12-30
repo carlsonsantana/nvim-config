@@ -21,7 +21,7 @@ highlight link unusedimport WarningMsg
 
 if (!exists("g:JavaComplete_ImportSortType")) || (g:JavaComplete_ImportSortType == 'jarName')
   let g:JavaComplete_ImportSortType = 'packageName'
-  let g:JavaComplete_ImportOrder = ['java.', 'javax.', 'junit.', '*']
+  let g:JavaComplete_ImportOrder = ['java.', 'javax.', 'android.', 'junit.', '*']
   let g:JavaComplete_ExcludeClassRegex = 'com.sun.*'
 endif
 
