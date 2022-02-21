@@ -28,7 +28,7 @@ let g:ale_fix_on_save = 1
 let g:ale_python_isort_options = '--settings-path ~/.vim/programming/configs/python/.isort.cfg'
 let g:ale_python_autopep8_options = '--global-config ~/.vim/programming/configs/python/.pep8'
 let g:ale_php_cs_fixer_options = '--config=$(readlink -f ~/.vim/programming/configs/php/.php_cs) --allow-risky=yes --cache-file=.git/.php_cs.cache'
-let g:ale_c_uncrustify_options = '-c ~/.vim/programming/configs/java/config.cfg -l JAVA'
+let g:ale_c_uncrustify_options = '-c ~/.vim/programming/configs/java/config.cfg'
 
 " Navigate between errors
 nmap <silent> <Leader>N <Plug>(ale_previous_wrap)
