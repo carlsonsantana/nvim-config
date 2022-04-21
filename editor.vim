@@ -12,6 +12,9 @@ set backspace=indent,eol,start
 " Copy to clipboard
 set clipboard=unnamedplus
 
+" Replace selected text without yank
+vnoremap p "_dP
+
 " Linters
 let g:ale_python_pylint_options = '--rcfile ~/.vim/programming/configs/python/.pylintrc'
 let g:ale_python_mypy_options = '--config-file ~/.config/mypy.ini'
