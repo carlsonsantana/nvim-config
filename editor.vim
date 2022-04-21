@@ -10,7 +10,7 @@ vnoremap < <gv
 set backspace=indent,eol,start
 
 " Copy to clipboard
-vmap y ygvcp
+set clipboard=unnamedplus
 
 " Linters
 let g:ale_python_pylint_options = '--rcfile ~/.vim/programming/configs/python/.pylintrc'
