@@ -15,6 +15,10 @@ set clipboard=unnamedplus
 " Replace selected text without yank
 vnoremap p "_dP
 
+" Delete without yank deleted text
+nnoremap d "_d
+vnoremap d "_d
+
 " Linters
 let g:ale_python_pylint_options = '--rcfile ~/.vim/programming/configs/python/.pylintrc'
 let g:ale_python_mypy_options = '--config-file ~/.config/mypy.ini'
