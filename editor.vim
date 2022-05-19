@@ -13,7 +13,8 @@ set backspace=indent,eol,start
 set clipboard=unnamedplus
 
 " Replace selected text without yank
-vnoremap p "_dP
+vnoremap p "_dp
+vnoremap P "_dP
 
 " Delete without yank deleted text
 nnoremap d "_d
